@@ -1,0 +1,18 @@
+#modalProduct.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %h3.mb-0 Digital SLR
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+      .modal-body
+        .row
+          .col-lg-4.text-center
+            %img.mx-auto.img-fluid{:alt => "Product detail image", :src => "//robohash.org/92340?size=150x150"}/
+            %h6.small.text-wide.text-uppercase
+              %a{:href => ""} Digital SLR
+          .col-lg-8
+            %p.lead Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips.
+            %h2 $129.00
+            %a.btn.btn-lg.btn-primary.mt-1{:href => "./cart.html"} Add to Cart
+      .modal-footer
+      %button.btn.btn-secondary{"aria-hidden" => "true", "data-dismiss" => "modal"} Close

@@ -1,0 +1,29 @@
+%nav.navbar.navbar-expand-sm.navbar-dark.fixed-top.bg-dark
+  .container
+    %a.navbar-brand{:href => "/"}
+      ECommerce
+    %button.navbar-toggler{"data-target" => "#navbarSearch", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarSearch.navbar-collapse.collapse.justify-content-stretch
+      %ul.navbar-nav.m-auto
+        %li.nav-item
+          =link_to("Home", products_path, class: "nav-link active")
+        %li.nav-item.active
+          %a.nav-link{:href => "category.html"}
+            Categories
+            %span.sr-only (current)
+        %li.nav-item
+          =link_to("Product", products_path(1), class: "nav-link active")
+        %li.nav-item
+          %a.nav-link{:href => "contact.html"} Contact
+      %form.form-inline.my-2.my-lg-0
+        .input-group.input-group-sm
+          %input.form-control{"aria-describedby" => "inputGroup-sizing-sm", "aria-label" => "Small", :placeholder => "Search...", :type => "text"}/
+          .input-group-append
+            %button.btn.btn-secondary.btn-number{:type => "button"}
+              %i.fa.fa-search
+
+%br
+%br
+%br
+%br

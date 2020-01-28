@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+footer {
+    background: #343a40;
+    padding: 40px;
+    box-shadow: 0 50vh 0 50vh #343a40;
+}
+footer a {
+    color: #f8f9fa!important
+}
+
+.img img {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
