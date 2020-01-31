@@ -1,75 +1,324 @@
+-#.container
+-#  .row
+-#    .col-md-9
+-#      .card-group.vgr-cards
+-#        .card.p-3
+-#          .card-img-body
+-#            %img.card-img{:alt => "Card image cap", :src => "https://picsum.photos/100/100"}/
+-#          .card-body
+-#            %h4.card-title Card title
+-#            %p.card-text
+-#              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+-#            %a.btn.btn-outline-primary{:href => "#"} Primary
+-#        .card.p-3
+-#          .card-img-body
+-#            %img.card-img.border-right{:alt => "Card image cap", :src => "https://picsum.photos/400/350"}/
+-#          .card-body
+-#            %h4.card-title Card title
+-#            %p.card-text This card has supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This card has supporting text below as a natural lead-in to additional content.
+-#            %a.btn.btn-outline-primary{:href => "#"} Primary
+-#        .card.p-3
+-#          .card-img-body
+-#            %img.card-img{:alt => "Card image cap", :src => "https://picsum.photos/400/350"}/
+-#          .card-body
+-#            %h4.card-title Card title
+-#            %p.card-text
+-#              This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action. This is a wider card with supporting text below as a natural lead-in
+-#              to additional content. This content is a little bit longer.
+-#            %a.btn.btn-outline-primary{:href => "#"} Primary
+-#    .col-md-3
+-#      abc
+
+
 .container
-  .row
-    .col-md-8.border-right
-      .row
-        .col-md-12
-          .section-title
-            %h2 Most Read
-        .col-md-12
-          .post.post-row
-            %a.post-img{href: "blog-post.html"}
-              %img{alt: "", src: "https://colorlib.com/preview/theme/webmag/img/post-4.jpg"}/
-            .post-body
-              .post-meta
-                %span.post-date March 27, 2018
-              %h3.post-title
-                %a{href: "blog-post.html"} Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        .col-md-12
-          .post.post-row
-            %a.post-img{href: "blog-post.html"}
-              %img{alt: "", src: "https://colorlib.com/preview/theme/webmag/img/post-6.jpg"}/
-            .post-body
-              .post-meta
-                %span.post-date March 27, 2018
-              %h3.post-title
-                %a{href: "blog-post.html"} Why Node.js Is The Coolest Kid On The Backend Development Block!
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        .col-md-12
-          .post.post-row
-            %a.post-img{href: "blog-post.html"}
-              %img{alt: "", src: "https://colorlib.com/preview/theme/webmag/img/post-1.jpg"}/
-            .post-body
-              .post-meta
-                %span.post-date March 27, 2018
-              %h3.post-title
-                %a{href: "blog-post.html"} CSS Float: A Tutorial
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        .col-md-12
-          .post.post-row
-            %a.post-img{href: "blog-post.html"}
-              %img{alt: "", src: "https://colorlib.com/preview/theme/webmag/img/post-2.jpg"}/
-            .post-body
-              .post-meta
-                %span.post-date March 27, 2018
-              %h3.post-title
-                %a{href: "blog-post.html"} Ask HN: Does Anybody Still Use JQuery?
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
-        .col-md-12
-          .section-row
-            %button.primary-button.center-block Load More
-    .col-md-4
-      .aside-widget.text-center
-        %a{href: "#", style: "display: inline-block;margin: auto;"}
-          %img.img-responsive{alt: "", height: "0", src: "./img/ad-1.jpg", style: "display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;", width: "0"}/
-      .aside-widget
-        .section-title
-          %h2 Archive
-        .category-widget
-          %ul
-            %li
-              %a.cat-1{href: "#"}
-                January 2020
-                %span 340
-            %li
-              %a.cat-2{href: "#"}
-                December 2020
-                %span 74
-            %li
-              %a.cat-4{href: "#"}
-                November 2020
-                %span 41
-            %li
-              %a.cat-3{href: "#"}
-                October 2020
-                %span 35
+  .card-columns
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://slickdeals.net/attachment/9/4/2/1/1/2/200x200/8853827.thumb"}/
+        %h4.card-title H&R Block 2019 Tax Software (Digital Download): Deluxe + State
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/1/3/7/6/4/4/7/200x200/8854634.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/4/2/6/2/5/6/8/200x200/8855030.thumb"}/
+        %h4.card-title 24-Ct Purina Fancy Feast Gravy Lovers Adult Canned Wet Cat Food (Chicken Flavor)
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Gigabyte X570 AORUS Elite WiFi AMD ATX Motherboard
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/1/8/9/1/4/3/4/200x200/8854244.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://slickdeals.net/attachment/9/4/2/1/1/2/200x200/8853827.thumb"}/
+        %h4.card-title H&R Block 2019 Tax Software (Digital Download): Deluxe + State
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/1/3/7/6/4/4/7/200x200/8854634.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Gigabyte X570 AORUS Elite WiFi AMD ATX Motherboard
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/4/2/6/2/5/6/8/200x200/8855030.thumb"}/
+        %h4.card-title 24-Ct Purina Fancy Feast Gravy Lovers Adult Canned Wet Cat Food (Chicken Flavor)
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/1/8/9/1/4/3/4/200x200/8854244.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://slickdeals.net/attachment/9/4/2/1/1/2/200x200/8853827.thumb"}/
+        %h4.card-title H&R Block 2019 Tax Software (Digital Download): Deluxe + State
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/1/3/7/6/4/4/7/200x200/8854634.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Gigabyte X570 AORUS Elite WiFi AMD ATX Motherboard
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/4/2/6/2/5/6/8/200x200/8855030.thumb"}/
+        %h4.card-title 24-Ct Purina Fancy Feast Gravy Lovers Adult Canned Wet Cat Food (Chicken Flavor)
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/1/8/9/1/4/3/4/200x200/8854244.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/1/8/9/1/4/3/4/200x200/8854244.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://slickdeals.net/attachment/9/4/2/1/1/2/200x200/8853827.thumb"}/
+        %h4.card-title H&R Block 2019 Tax Software (Digital Download): Deluxe + State
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/1/3/7/6/4/4/7/200x200/8854634.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical Gaming
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Gigabyte X570 AORUS Elite WiFi AMD ATX Motherboard
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/2/4/2/6/2/5/6/8/200x200/8855030.thumb"}/
+        %h4.card-title 24-Ct Purina Fancy Feast Gravy Lovers Adult Canned Wet Cat Food (Chicken Flavor)
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
+
+    .card.shadow.bg-white.rounded
+      .card-body
+        .float-right.text-muted.post-meta
+          %i.far.fa-clock
+          31st Jan, 2019
+        %br
+        .text-center
+          %img.card-img.m-1{alt: "Bologna", src: "https://static.slickdealscdn.com/attachment/3/5/9/4/0/2/8/200x200/8855984.thumb"}/
+        %h4.card-title Logitech G Pro RGB Mechanical Gaming Keyboard w/ Romer-G Switches Logitech G Pro RGB Mechanical
+        %button.btn-sm.btn-info{type: "button"} Link
+        %button.btn-sm.btn-secondary{type: "button"} Coupon
