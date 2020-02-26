@@ -19,6 +19,10 @@
   %body
     .container-fluid
       = render partial: 'layouts/header'
+      .container
+        - flash.each do |key, value|
+          %div{class: "#{flash_class(key)}"}
+            = value
       = yield
       = content_for :render_async
       = render partial: 'layouts/footer'

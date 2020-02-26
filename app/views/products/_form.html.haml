@@ -1,0 +1,23 @@
+.container.mb-4
+  .card.pl-4
+    .card-body
+      = form_for product, :html => {:class => "form-horizontal center needs-validation"} do |f|
+        .form-group
+          = f.label :title, "Title", class: "col-md-4 control-label"
+          .col-md-12
+            = f.text_field :title, class: "form-control", maxlength: 150, required: true
+            .invalid-feedback Title can't be blank
+        .form-group
+          = f.label :cover_image, "Cover Image", class: "col-md-4 control-label"
+          .col-md-12
+            = f.text_field :cover_image, class: "form-control"
+        .form-group
+          = f.label :affiliate_link, "Affiliate Link", class: "col-md-4 control-label"
+          .col-md-12
+            = f.text_field :affiliate_link, class: "form-control"
+        .form-group
+          = f.label :coupon_code, "Coupon Code", class: "col-md-4 control-label"
+          .col-md-12
+            = f.text_field :coupon_code, class: "form-control"
+        .form-group
+          = f.submit "Save", class: "btn btn-default btn-primary"
