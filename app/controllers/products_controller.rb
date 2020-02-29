@@ -44,7 +44,11 @@ class ProductsController < ApplicationController
   private
   
   def product_params
-    params.require(:product).permit(:title, :cover_image, :affiliate_link, :coupon_code)
+    params.require(:product).permit(:title,
+                                    :description,
+                                    :cover_image,
+                                    :affiliate_link,
+                                    :coupon_code)
   end
   
 end

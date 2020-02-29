@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_02_11_010555) do
 
   create_table "products", force: :cascade do |t|
     t.citext "title"
+    t.text "description"
     t.string "cover_image"
     t.string "affiliate_link"
     t.string "coupon_code"

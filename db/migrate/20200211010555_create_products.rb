@@ -3,6 +3,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
     enable_extension :citext
     create_table :products do |t|
       t.citext :title
+      t.text :description
       t.string :cover_image
       t.string :affiliate_link
       t.string :coupon_code

@@ -1,16 +1,11 @@
 .container
-  -@products.each_slice(4).each do |product_slice|
+  -@products.each_slice(3).each do |product_slice|
     .card-deck
       -product_slice.each do |product|
-        .card
-          .mx-auto.d-block
-            %img.card-img-top.img-fluid{src: product.cover_image}
+        .card.product
+          %img.card-img-top.img-fluid{src: product.cover_image}
           .card-body
-            .card-text= product.title
+            .card-title= product.title
+            %p.card-text.text-muted= product.description
           .card-footer
-            .d-flex
-              - if product.affiliate_link.present?
-                = link_to("Buy Now", product.affiliate_link, class: "btn btn-sm btn-info", target: "_blank")
-              - if product.coupon_code.present?
-                %h3.ml-auto
-                  %span.badge.badge-secondary= product.coupon_code
+            = link_to("Buy Now", product.affiliate_link, class: "btn btn-sm btn-success", target: "_blank")

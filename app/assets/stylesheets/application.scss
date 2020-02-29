@@ -20,16 +20,45 @@ body {
   margin-top: 4rem;
 }
 
-.card-img-top {
-  max-width: 14rem;
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+.card-deck {
+  margin-bottom: 0.5rem;
 }
 
-.card {
-  min-width: 12rem;
-  margin-bottom: 1em !important;
+.product {
+  .card {
+    min-width: 16rem;
+    max-width: 22rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .card-img-top {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 15vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .card-title {
+    border-left: 5px solid #28a745;
+    padding: 2px 0 2px 10px;
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    .card-img-top {
+      object-fit: cover;
+      height: 75%;
+    }
+  }
 }
 
 footer {
@@ -40,8 +69,4 @@ footer {
   background: #343a40 !important;
   text-align: center;
   color: white;
-}
-
-.card-text {
-  font-size: 0.8rem;
 }
