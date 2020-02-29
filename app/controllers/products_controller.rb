@@ -1,6 +1,5 @@
 class ProductsController < ApplicationController
   def home
-
   end
 
   def new
@@ -22,31 +21,26 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     if @product.update product_params
       flash[:success] = "Product created successfully.!"
-      redirect_to edit_product_path(@product)
     else
       flash[:error] = "Error creating product."
-      redirect_to edit_product_path(@product)
     end
+    redirect_to edit_product_path(@product)
   end
 
   def index
-    @products = Product.all.order(updated_at: :desc)
+    @pagy, @products = pagy(Product.all.order(updated_at: :desc))
   end
 
   def index_v2
-    @products = Product.all.order(updated_at: :desc)
-  end
-
-  def show
-
+    @pagy, @products = pagy(Product.all.order(updated_at: :desc))
   end
 
   def edit
     @product = Product.find(params[:id])
   end
-  
+
   private
-  
+
   def product_params
     params.require(:product).permit(:title,
                                     :description,
@@ -54,5 +48,4 @@ class ProductsController < ApplicationController
                                     :affiliate_link,
                                     :coupon_code)
   end
-  
 end

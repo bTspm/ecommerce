@@ -1,4 +1,6 @@
 .container
+  = pagy_bootstrap_nav(@pagy).html_safe
+
   -@products.each_slice(3).each do |product_slice|
     .card-deck
       -product_slice.each do |product|
@@ -15,4 +17,8 @@
                   = link_to(link_name_with_icon, product.affiliate_link, class: "btn btn-sm btn-success text-center", target: "_blank")
               .col-sm.text-right
                 - if product.coupon_code.present?
-                  = link_to("Show Coupon", product.coupon_code, class: "btn btn-sm btn-success text-center", target: "_blank")
+                  -link_name_with_icon = fontawesome_icon("fas fa-eye mr-1", "Show Coupon")
+                  = link_to(link_name_with_icon, product.coupon_code, class: "btn btn-sm btn-success text-center", target: "_blank")
+
+
+  = pagy_bootstrap_nav(@pagy).html_safe

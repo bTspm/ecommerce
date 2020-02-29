@@ -59,7 +59,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "haml"
-gem "render_async"
+gem "pagy"
 
 group :test do
   gem "simplecov"
