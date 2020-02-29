@@ -61,6 +61,39 @@ body {
   }
 }
 
+
+//================================
+
+//Product V2
+
+.product-a {
+  .card {
+    min-width: 16rem;
+    max-width: 22rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .card-img {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 15vw;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .card-title {
+    line-height: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+//==================================
+
 footer {
   position: absolute;
   padding: 1rem;

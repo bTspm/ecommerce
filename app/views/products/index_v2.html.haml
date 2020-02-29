@@ -2,10 +2,10 @@
   -@products.each_slice(3).each do |product_slice|
     .card-deck
       -product_slice.each do |product|
-        .card.product
-          %img.card-img-top.img-fluid{src: product.cover_image}
+        .card.product-a
           .card-body
             .card-title= product.title
+            %img.card-img.img-fluid{src: product.cover_image}
             %p.card-text.text-muted= product.description
           .card-footer
             .row
