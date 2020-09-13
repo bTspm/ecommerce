@@ -1,0 +1,18 @@
+.img-wrap img {
+  height: 100%;
+  max-width: 100%;
+  width: auto;
+  display: inline-block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.img-wrap {
+  height: 250px;
+  border-radius: 0.37rem 0 0 0.37rem;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 0.7rem;
+}

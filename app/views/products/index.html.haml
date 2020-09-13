@@ -1,24 +1,13 @@
-.container
-  = pagy_bootstrap_nav(@pagy).html_safe
+.container-fluid
+  %div.row
+    .col-lg-9.col-md-12
+      -@products.each.each do |product|
+        %div
+          .mt-3.card
+            = render partial: "index_product", locals: { product: product }
 
-  -@products.each_slice(3).each do |product_slice|
-    .card-deck
-      -product_slice.each do |product|
-        .card.product
-          %img.card-img-top.img-fluid{src: product.cover_image}
-          .card-body
-            .card-title= product.title
-            %p.card-text.text-muted= product.description
-          .card-footer
-            .row
-              .col-sm
-                - if product.affiliate_link.present?
-                  -link_name_with_icon = fontawesome_icon("fas fa-shopping-cart mr-2", "Buy Now")
-                  = link_to(link_name_with_icon, product.affiliate_link, class: "btn btn-sm btn-success text-center", target: "_blank")
-              .col-sm.text-right
-                - if product.coupon_code.present?
-                  -link_name_with_icon = fontawesome_icon("fas fa-eye mr-1", "Show Coupon")
-                  = link_to(link_name_with_icon, product.coupon_code, class: "btn btn-sm btn-success text-center", target: "_blank")
+      .text-center.mt-4
+        = pagy_bootstrap_nav(@pagy).html_safe
 
-
-  = pagy_bootstrap_nav(@pagy).html_safe
+    .col-lg-3.col-md-12
+      = render partial: "product_aggregations"

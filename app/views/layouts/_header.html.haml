@@ -1,13 +1,15 @@
-%nav.navbar.navbar-expand-sm.navbar-dark.fixed-top.bg-dark
-  .container
-    %a.navbar-brand{:href => "/"}
-      ECommerce
+%nav.navbar.navbar-expand.navbar-dark.fixed-top{style: "background-color: #009474"}
+  .container-fluid
+    %a.navbar-brand{href: "#"}
+      %img{alt: "", src: "https://picresize.com/images/rsz_1logo-large.png"}/
+
     %button.navbar-toggler{"data-target" => "#navbarSearch", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     #navbarSearch.navbar-collapse.collapse.justify-content-stretch
-      %form.form-inline.my-2.my-lg-0
-        .input-group.input-group-sm
-          %input.form-control{"aria-describedby" => "inputGroup-sizing-sm", "aria-label" => "Small", :placeholder => "Search...", :type => "text"}/
-          .input-group-append
-            %button.btn.btn-secondary.btn-number{:type => "button"}
-              %i.fa.fa-search
+      .ml-auto
+        %form.form-inline.my-2.my-lg-0
+          .input-group.input-group-sm
+            %input.form-control{"aria-describedby" => "inputGroup-sizing-sm", "aria-label" => "Small", :placeholder => "Search...", :type => "text"}/
+            .input-group-append
+              %button.btn.btn-light.btn-number{:type => "button"}
+                %i.fa.fa-search
